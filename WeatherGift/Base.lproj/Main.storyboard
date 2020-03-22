@@ -30,6 +30,18 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem title="About" id="qhI-2x-aVD"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rcQ-Qz-H6j"/>
+                                    <barButtonItem style="plain" id="R2S-P9-WPA">
+                                        <pageControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="1me-WB-PeD">
+                                            <rect key="frame" x="73" y="4" width="174" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="pageIndicatorTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="pageControlTapped:" destination="kgX-gH-XnY" eventType="valueChanged" id="ABu-ql-LHe"/>
+                                            </connections>
+                                        </pageControl>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="N5s-GM-Oyr"/>
                                     <barButtonItem image="list.bullet" catalog="system" id="lTc-TV-ZeL">
                                         <connections>
@@ -91,6 +103,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="CWm-q1-N0T" id="bcp-ZX-AP3"/>
                         <outlet property="imageView" destination="MTj-4f-qNQ" id="kcN-rH-d2S"/>
+                        <outlet property="pageControl" destination="1me-WB-PeD" id="hcn-D1-u3w"/>
                         <outlet property="placeLabel" destination="8p1-TK-fZm" id="4cB-cs-Q47"/>
                         <outlet property="summaryLabel" destination="XIr-Ko-Aiy" id="dpG-4t-xjg"/>
                         <outlet property="temperatureLabel" destination="VFg-4e-jbh" id="iqU-IC-TM2"/>
@@ -109,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHv-RY-WB2">
-                                <rect key="frame" x="0.0" y="504" width="320" height="64"/>
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="XQM-Wv-Z3q"/>
                                 </constraints>
