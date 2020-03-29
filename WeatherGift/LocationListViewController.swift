@@ -24,6 +24,7 @@ class LocationListViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
     func saveLocations() {
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(weatherLocations) {
@@ -120,4 +121,3 @@ extension LocationListViewController: GMSAutocompleteViewControllerDelegate {
   }
 
 }
- 
